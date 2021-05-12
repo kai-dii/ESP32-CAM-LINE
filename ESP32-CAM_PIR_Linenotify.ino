@@ -1,19 +1,10 @@
-/*
-ESP32-CAM 人體移動感測器啟動上傳影像到Line Notify
-Author : ChungYi Fu (Kaohsiung, Taiwan)  2020-5-21 13:00
-https://www.facebook.com/francefu
-
-人體移動感測器 -> GND, gpio13, 3.3V
-
-一小時最多能上傳50張影像，最高解析度為XGA(1024*768).
-*/
 
 //輸入Wi-Fi帳密
-const char* ssid     = "usb_lab_2.4G";   //Wi-Fi帳號
-const char* password = "usblabwifi";   //Wi-Fi密碼
+const char* ssid     = "SSID";   //Wi-Fi帳號
+const char* password = "PASSWORD";   //Wi-Fi密碼
 
-String myToken = "FWxhplwtjhNWTeA5litARSY1NUAxNdrMcZ5Huw09sE6";    //Line Notify Token
-int pinPIR = 13;      //人體移動感測器腳位
+String myToken = "LINE Token";    //Line Notify Token
+
 
 #include <WiFi.h>
 #include <WiFiClientSecure.h>
